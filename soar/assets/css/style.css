@@ -14,6 +14,29 @@
   font-weight: normal;
   font-style: normal;
   }
+
+  @font-face {
+    font-family: 'SamsungOne 400';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SamsungOne 400'), url('../css/SamsungOne-400.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'SamsungOne 700';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SamsungOne 700'), url('../css/SamsungOne-700.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Samsung Sharp Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Samsung Sharp Sans Bold'), url('../css/SamsungSharpSans-Bold.woff') format('woff');
+    }
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -351,7 +374,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: calc(100vh - 72px);
   background: url("../img/main.png") center center no-repeat;
-  background-size: cover;
+  background-size: 116%;
   position: relative;
   margin-top: 80px;
   padding: 0;
@@ -400,9 +423,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 992px) {
   #hero {
-    background-size: 100%;
-    background-position-y: 140px;
-    margin-top: 60px;
+    background-size: cover;
+    background-position-x: -64px;
+    margin-top: -13px;
     height: calc(100vh - 60px);
   }
 }
@@ -420,9 +443,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 376px){
   #hero {
-    background-size: 100%;
+    background-size: cover;
+    background-position-x: -6px;
     height: calc(100vh - 200px);
   }
+  @media (max-width: 321px){
+    #hero {
+      background-size: cover;
+      background-position-x: 0px;
+      height: calc(100vh - 0px);
+    }
+}
 }
 
 /*--------------------------------------------------------------
@@ -521,6 +552,7 @@ section {
   font-weight: 400;
   font-size: 34px;
   color: #21413c;
+  font-family: 'MyLotteRegular';
 }
 
 .about .icon-box {
@@ -534,16 +566,18 @@ section {
 }
 
 .about .icon-box h4 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   margin-left: 60px;
   color: #21413c;
+  font-family: 'SamsungOne 400';
 }
 
 .about .icon-box p {
   font-size: 15px;
   color: #848484;
   margin-left: 60px;
+  font-family: 'SamsungOne 400';
 }
 
 /*--------------------------------------------------------------
