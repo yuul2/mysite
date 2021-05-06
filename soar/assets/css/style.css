@@ -5,6 +5,15 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
+/*------------------------------------------------------------------------- font --------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'MyLotteRegular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/MyLotteRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -32,27 +41,30 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  width: 40px;
+  width: 150px;
   height: 40px;
-  border-radius: 3px;
+  border-radius: 40px;
   right: 15px;
   bottom: 15px;
-  background: #1bac91;
+  background: #2a0e44;
   color: #fff;
+  line-height: 40px;
   transition: display 0.5s ease-in-out;
   z-index: 99999;
+  font-family: 'MyLotteRegular';
+  box-shadow: 0 4px 14px 0 rgb(33 37 41 / 40%);
 }
 
-.back-to-top i {
+/* .back-to-top i {
   font-size: 24px;
   position: absolute;
   top: 8px;
   left: 8px;
-}
+} */
 
 .back-to-top:hover {
   color: #fff;
-  background: #18967e;
+  background: #992cff;
   transition: background 0.2s ease-in-out;
 }
 
@@ -84,6 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 #header .logo img {
+  width: 80px;
   padding: 0;
   margin: 0;
   max-height: 40px;
@@ -133,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 2px;
   bottom: 3px;
   left: 0;
-  background-color:#1bac91;
+  background-color:#992cff;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -330,18 +343,20 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
-
+/* c/#2a0e44 찐보라 */
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
   height: calc(100vh - 72px);
-  background: url("../img/mainimg.png") center center no-repeat;
-  background-size: 600px;
+  background: url("../img/main.png") center center no-repeat;
+  background-size: cover;
   position: relative;
-  margin-top: 72px;
+  margin-top: 80px;
   padding: 0;
+  background-position-x: 0px;
+  background-position-y: 73px;
 }
 
 #hero:before {
@@ -359,6 +374,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h1 {
+  font-family: 'MyLotteRegular';
   margin: 0 0 10px 0;
   font-size: 48px;
   font-weight: 700;
@@ -367,38 +383,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #hero h2 {
+  font-family: 'MyLotteRegular';
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 35px;
   font-size: 24px;
 }
 
-#hero .btn-get-started {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 28px;
-  border-radius: 4px;
-  transition: 0.5s;
-  border: 2px solid #fff;
-  color: #fff;
-}
 
-#hero .btn-get-started:hover {
-  border-color: #1bac91;
-  background: #1bac91;
-}
 
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+   
   }
 }
 
 @media (max-width: 992px) {
   #hero {
+    background-size: 100%;
+    background-position-y: 140px;
     margin-top: 60px;
     height: calc(100vh - 60px);
   }
@@ -413,6 +416,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+}
+@media (max-width: 376px){
+  #hero {
+    background-size: 100%;
+    height: calc(100vh - 200px);
   }
 }
 

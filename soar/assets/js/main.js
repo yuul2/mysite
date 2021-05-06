@@ -119,13 +119,20 @@
       $('.back-to-top').fadeOut('slow');
     }
   });
+  $('.back-to-top').mouseover(function(){
+    $('.back-to-top').css('transform','translateY(5px)').css('transition','all .25s');
 
-  $('.back-to-top').click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1500, 'easeInOutExpo');
-    return false;
-  });
+   })
+   $('.back-to-top').mouseleave(function(){
+    $('.back-to-top').css('transform','translateY(0px)');
+   })
+
+  // $('.back-to-top').click(function() {
+  //   $('html, body').animate({
+  //     scrollTop: 0
+  //   }, 1500, 'easeInOutExpo');
+  //   return false;
+  // });
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
