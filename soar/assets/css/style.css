@@ -630,61 +630,85 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features .nav-tabs {
-  border: 0;
+.features .point-sec{
+  position: relative;
 }
 
-.features .nav-link {
-  border: 0;
-  padding: 20px;
-  transition: 0.3s;
-  color: #21413c;
+.point .bg{
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  background-color: #2a0e44;
+  opacity: 0.12;
+  border-radius: 50px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 995;
+  animation: record-lg 1.5s ease-in-out infinite;
+}
+@keyframes record-lg {
+	0% {
+		opacity: 0;
+		transform: scale(.5);
+	}
+	50% {
+		opacity: .1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1);
+	}
+}
+.point .bg::before{
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #2a0e44;
+  opacity: 0.5;
+  border-radius: 50px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 997;
+
 }
 
-.features .nav-link:hover {
-  color: #1bac91;
+.point .dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background: #2a0e44;
+  position: absolute;
+  z-index: 999;
+  right: 9px;
+  bottom: 9px;
+  animation: dot-effec 1.5s ease-in-out infinite;
+  cursor: pointer;
+}
+@keyframes dot-effec {
+	0% {
+		opacity: .5;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: .5;
+	}
 }
 
-.features .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
+.point{
+  position: absolute;
+  right: 220px;
+  bottom: 220px;
+}
+.point-1{
+  position: absolute;
+  right: 100px;
+  bottom: 130px;
 }
 
-.features .nav-link p {
-  font-size: 14px;
-  margin-bottom: 0;
-}
-
-.features .nav-link.active {
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.12);
-}
-
-.features .nav-link.active h4 {
-  color: #1bac91;
-}
-
-.features .tab-pane.active {
-  -webkit-animation: slide-down 0.5s ease-out;
-  animation: slide-down 0.5s ease-out;
-}
-
-@-webkit-keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-down {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 /*--------------------------------------------------------------
 # Services
