@@ -121,12 +121,15 @@
   });
   $('.back-to-top').mouseover(function(){
     $('.back-to-top').css('transform','translateY(5px)').css('transition','all .25s');
+    $('.fa-envelope').css('color','#ffd800');
 
    })
    $('.back-to-top').mouseleave(function(){
     $('.back-to-top').css('transform','translateY(0px)');
+    $('.fa-envelope').css('color','#fff');
    })
-
+ 
+   
   // $('.back-to-top').click(function() {
   //   $('html, body').animate({
   //     scrollTop: 0
