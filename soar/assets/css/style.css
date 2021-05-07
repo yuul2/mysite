@@ -64,8 +64,8 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  width: 150px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border-radius: 40px;
   right: 15px;
   bottom: 15px;
@@ -80,8 +80,9 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top i {
   font-size: 24px;
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 18.5px;
+  left: 18.5px;
+  color: #ffd800;
   
 
 }
@@ -466,7 +467,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f9f8;
+  background-color: #2e0a44;
 }
 
 .section-title {
@@ -479,11 +480,15 @@ section {
   font-weight: 300;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #21413c;
+  color: #2a0e44;
+  font-family: 'MyLotteRegular';
+
 }
 
 .section-title p {
   margin-bottom: 0;
+  font-family: 'MyLotteRegular';
+
 }
 
 /*--------------------------------------------------------------
@@ -630,142 +635,14 @@ section {
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features .point-sec{
-  position: relative;
-}
-
-.point .bg{
-  position: absolute;
-  width: 28px;
-  height: 28px;
-  background-color: #2a0e44;
-  opacity: 0.12;
-  border-radius: 50px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 995;
-  animation: record-lg 1.5s ease-in-out infinite;
-}
-@keyframes record-lg {
-	0% {
-		opacity: 0;
-		transform: scale(.5);
-	}
-	50% {
-		opacity: .1;
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(1);
-	}
-}
-.point .bg::before{
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: #2a0e44;
-  opacity: 0.5;
-  border-radius: 50px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 997;
-
-}
-
-.point .dot{
-  width: 8px;
-  height: 8px;
-  border-radius: 50px;
-  background: #2a0e44;
-  position: absolute;
-  z-index: 999;
-  right: 9px;
-  bottom: 9px;
-  animation: dot-effec 1.5s ease-in-out infinite;
-  cursor: pointer;
-}
-@keyframes dot-effec {
-	0% {
-		opacity: .5;
-	}
-	50% {
-		opacity: 1;
-	}
-	100% {
-		opacity: .5;
-	}
-}
-
-.point{
-  position: absolute;
-  right: 220px;
-  bottom: 220px;
-}
-.point-1{
-  position: absolute;
-  right: 100px;
-  bottom: 130px;
+.features .content-img{
+  margin: 8% 0 5%;
 }
 
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  background: #fff;
-  transition: all 0.3s ease-in-out;
-  border-radius: 15px;
-  text-align: center;
-  border-bottom: 3px solid #fff;
-}
+	
 
-.services .icon-box:hover {
-  box-shadow: 0 2px 29px 0 rgba(37, 37, 37, 0.1);
-}
 
-.services .icon i {
-  font-size: 48px;
-  line-height: 1;
-  margin-bottom: 15px;
-}
-
-.services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.services .title a {
-  color: #111;
-}
-
-.services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-.services .icon-box-pink .icon i {
-  color: #ff689b;
-}
-
-.services .icon-box-cyan .icon i {
-  color: #3fcdc7;
-}
-
-.services .icon-box-green .icon i {
-  color: #41cf2e;
-}
-
-.services .icon-box-blue .icon i {
-  color: #2282ff;
-}
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -774,7 +651,12 @@ section {
   box-sizing: content-box;
   min-height: 320px;
 }
-
+.testimonials .section-title h2{
+  color: white;
+}
+.testimonials .section-title p{
+  color: #999;
+}
 .testimonials .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50%;
@@ -1177,7 +1059,8 @@ section {
 
 .faq .faq-list li {
   padding: 20px;
-  background: #fff;
+  background: #ffd800;
+  opacity: 0.2;
   border-radius: 4px;
   position: relative;
 }
@@ -1198,7 +1081,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #97cac2;
+  color: #999;
 }
 
 .faq .faq-list .icon-show, .faq .faq-list .icon-close {
@@ -1218,11 +1101,11 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color: #999;
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #1bac91;
+  color: #ffd800;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1428,8 +1311,8 @@ section {
 }
 
 #footer .footer-top {
-  background: #0c1817;
-  border-bottom: 1px solid #18302c;
+  background: #2e0a44;
+  
   padding: 60px 0 30px 0;
 }
 
@@ -1456,7 +1339,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #1c3733;
+  background: #2a0e44;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
