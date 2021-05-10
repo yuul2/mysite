@@ -1,12 +1,26 @@
+@import url(../css/style.css);
+
+
+
+
 /*============================ about page ============================*/
 
 .bg-image{
     background-image: url(../img/main.png);
-    background-size: cover;
-    height: 300px;
-
-
+    background-size: 100%;
+    height: 400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+.about-content .about-title h3{
+    font-family: 'SamsungOne 400';
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
 
 
 
