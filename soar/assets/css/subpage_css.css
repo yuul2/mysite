@@ -43,7 +43,29 @@
 /*============================ about page END ============================*/
 
 /*============================ project page ============================*/
+.project div img{
+  width: 80px;
+}
+.tab-area ul li{
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  background: #2a0e44;
+  display: block;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.tab-area ul li:nth-child(2){
+  width: 250px;
+}
+.tab-area ul li a{
+  color: white;
+}
 
+.project-content  .row:nth-child(2) div img{
+  width: 300px;
+
+}
 
 
 
