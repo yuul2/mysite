@@ -1,12 +1,13 @@
 @import url(../css/style.css);
 
-
+/* font-family: 'SamsungOne 400'; */
+/* MyLotteRegular */
 
 
 /*============================ about page ============================*/
 
 .bg-image{
-    background-image: url(../img/main.png);
+    background-image: url(../img/about-page-banner.jpg);
     background-size: 100%;
     height: 400px;
     width: 100%;
@@ -14,13 +15,24 @@
     background-position: center;
     background-attachment: fixed;
 }
+/* banner영역 end */
 
-.about-content .about-title h3{
-    font-family: 'SamsungOne 400';
-    font-weight: 700;
-    font-size: 1.2rem;
+.about-content .about-title h2{
+    font-family: 'MyLotteRegular';
+    font-weight: 600;
+    line-height: 3rem;
+   
 }
-
+.about-content .about-title p{
+  font-family: 'SamsungOne 400';
+  font-weight: 500;
+  line-height: 2rem;
+}
+.about-content h3{
+  font-family: 'SamsungOne 400';
+  font-size: 2rem;
+  font-weight: 800;
+}
 
 
 
@@ -29,6 +41,15 @@
 
 
 /*============================ about page END ============================*/
+
+/*============================ project page ============================*/
+
+
+
+
+
+
+/*============================ project page END ============================*/
 
 
 
