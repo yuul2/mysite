@@ -129,13 +129,7 @@
     $('.fa-envelope').css('color','#fff');
    })
  
-   
-  // $('.back-to-top').click(function() {
-  //   $('html, body').animate({
-  //     scrollTop: 0
-  //   }, 1500, 'easeInOutExpo');
-  //   return false;
-  // });
+ 
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
