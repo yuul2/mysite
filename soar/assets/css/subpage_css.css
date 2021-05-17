@@ -63,11 +63,13 @@
 }
 
 .project-content  .row:nth-child(2) div img{
-  width: 300px;
+  width: 240px;
 
 }
+.project-content  .row:nth-child(3) div img{
+  width: 49%;
 
-
+}
 
 
 
@@ -113,10 +115,21 @@
   top: 28.7%;
   left: 50.8%;
 }
+.faq .faq-list-m{
+  display: none;
+}
 
 @media (max-width: 1200px) {
   .faq .faq-list {
     padding: 0;
+  }
+}
+@media (max-width: 1024px){
+  .faq .faq-list-m{
+    display: block;
+  }
+  .faq .faq-list{
+    display: none;
   }
 }
 
