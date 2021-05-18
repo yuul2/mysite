@@ -43,8 +43,8 @@
 /*============================ about page END ============================*/
 
 /*============================ project page ============================*/
-.project div img{
-  width: 80px;
+div.online img{
+  width: 45%;
 }
 .tab-area ul li{
   width: 150px;
@@ -61,14 +61,21 @@
 .tab-area ul li a{
   color: white;
 }
-
-.project-content  .row:nth-child(2) div img{
-  width: 240px;
-
+.space{
+  display: none;
 }
-.project-content  .row:nth-child(3) div img{
-  width: 49%;
+.space img{
+  width: 240px;
+}
+#auction{
+  display: none;
+}
 
+#rental{
+  display: none;
+}
+#pb{
+  display:none
 }
 
 

@@ -111,7 +111,67 @@
     });
   });
 
-  // scroll fixed page
+  // project
+  $(function(){
+    $('.online-tab').click(function(){
+      $('#online').css('display','block');
+      $('#space').css('display','none');
+      $('#auction').css('display','none');
+      $('#rental').css('display','none');
+      $('#pb').css('display','none');
+      $('#long-pro').css('display','none');
+
+    })
+    
+    $('.space-tab').click(function(){
+      $('#space').css('display','block');
+      $('#online').css('display','none');
+      $('#auction').css('display','none');
+      $('#rental').css('display','none');
+      $('#pb').css('display','none');
+      $('#long-pro').css('display','none');
+    })
+
+    $('.auction-tab').click(function(){
+      $('#auction').css('display','block');
+      $('#space').css('display','none');
+      $('#online').css('display','none');
+      $('#rental').css('display','none');
+      $('#pb').css('display','none');
+      $('#long-pro').css('display','none');
+    })
+    
+    $('.rental-tab').click(function(){
+      $('#rental').css('display','block');
+      $('#auction').css('display','none');
+      $('#space').css('display','none');
+      $('#online').css('display','none');
+      $('#pb').css('display','none');
+      $('#long-pro').css('display','none');
+    })
+
+    $('.pb-tab').click(function(){
+      $('#pb').css('display','block');
+      $('#rental').css('display','none');
+      $('#auction').css('display','none');
+      $('#space').css('display','none');
+      $('#online').css('display','none');
+      $('#long-pro').css('display','none');
+    })
+
+    
+    $('.long-tab').click(function(){
+      $('#long-pro').css('display','block');
+      $('#pb').css('display','none');
+      $('#rental').css('display','none');
+      $('#auction').css('display','none');
+      $('#space').css('display','none');
+      $('#online').css('display','none');
+    })
+  })
+
+
+  // Qna scroll fixed page
 
   $(window).scroll(function(){
     if($(this).scrollTop()>2798){
@@ -134,6 +194,8 @@
     }
 
   })
+
+  //scroll fixed end
 
   var scrollPosition = window.scrollY || document.documentElement.scrollTop;
   console.log(scrollPosition);
