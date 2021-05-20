@@ -271,6 +271,13 @@
     items: 1
   });
 
+  //slick slider
+  $(document).ready(function(){
+    $('.slick-slider').slick({
+      setting-name: setting-value
+    });
+  });
+
   // Init AOS
   function aos_init() {
     AOS.init({
